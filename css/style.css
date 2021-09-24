@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/********* Font Face **********/
+@font-face {
+    font-family: 'vidaloka_regular';
+    src: url('../fonts/vidaloka-regular-webfont.woff2') format('woff2'),
+         url('../fonts/vidaloka-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 197px;
+
+}
+
+#section-0 {
+    margin-top: 197px;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'vidaloka_regular';
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #ffffff;
+}
+
+figure.logo {
+    padding: 0 45px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+nav {
+    background: #f6f2ec;
+    color: #603132;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0 40px;
+}
+
+nav ul li {
+    font-size: 30px;
+    padding: 80px 20px;
+}
+
+nav ul li:hover {
+    background: #ddc397;
+}
+
+.banner-wrapper {
+    position: relative;
+}
+
+figure.banner figcaption {
+    position: absolute;
+    top: 320px;
+    left: 260px;
+    font-size: 95px;
+    color: #603132;
+}
+
+figure.banner img {
+    width: 100%;
+    display: block;
+}
+
+.intro {
+    background: #fff2e8;
+    padding: 100px;
+    display: flex;
+}
+
+.intro--with-image {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro--title {
+    font-size: 90px;
+    line-height: 100px;
+    color: #603132;
+    font-weight: normal;
+    flex: 0 0 30%;
+}
+
+.intro--with-image .intro--title {
+    line-height: normal;
+    margin-bottom: 45px;
+}
+
+.intro--title h1 {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+
+
+.intro--title h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 10px;
+    background: #603132;
+}
+
+.intro--description {
+    flex: 0 0 calc(70% - 100px);
+    padding-left: 100px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+
+.intro--with-image .intro--description {
+    padding: 0;
+    flex: 0 0 100%;
+}
+
+.intro--left {
+    padding: 0 100px;
+    flex: 0 0 calc(40% - 200px);
+}
+
+.intro--right {
+    flex: 1;
+}
+
+.intro--image img {
+    width: 100%;
+    display: block;
+}
+
+.o-grid {
+    display: flex;
+}
+
+.o-grid--3 {
+    width: 25%;
+    display: flex;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.o-grid.open .o-grid--3{
+    width: 10%;
+}
+
+.o-grid.open .o-grid--3.active {
+    width: 70%;
+}
+
+.o-grid--4 {
+    flex: 0 0 33.33%;
+    display: flex;
+}
+
+.o-grid--right {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.o-grid--left {
+    width: 100%;
+    height: 780px;
+}
+
+.o-grid--3.active .o-grid--left {
+    width: 42%;
+} 
+
+.o-grid--3.active .o-grid--right {
+    width: 75%;
+    height: 780px;
+} 
+
+
+.p1 {
+    background: url(../images/project-1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.p2 {
+    background: url(../images/project-2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.p3 {
+    background: url(../images/project-3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.p4 {
+    background: url(../images/project-4.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.m-project--title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #603132;
+    padding: 40px 0;
+    text-align: center;
+    background: #e1d1ba;
+}
+
+.o-grid--3:nth-child(even) .m-project--title {
+    background: #ddc397;
+}
+
+.m-project--image img {
+    width: 100%;
+}
+
+.m-project--details {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.m-project--details--title {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.m-project--details--info {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.o-communities .figure--wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.o-communities figure {
+    position: relative;
+}
+
+.o-communities figure figcaption{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background: rgba(96, 49, 50, .5);
+    z-index: 1;
+    width: 100%;
+    font-size: 36px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.o-communities figure img {
+    display: block;
+    width: 100%;
+}
+
+.figure-details {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: calc(100% - 160px);
+    height: 100%;
+    z-index: 2;
+    background: rgba(96, 49, 50, 1);
+    color: #ffffff;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+.o-communities .figure--wrapper:hover .figure-details {
+    transform: translateY(0%);
+}
+
+.figure-details--title {
+    font-size: 40px;
+}
+
+.figure-details--info {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 60px 0;
+}
+
+.a-link {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.m-partner {
+    background: url(../images/bg.jpg) no-repeat;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.m-partner--title {
+    font-size: 40px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.m-partner--form input {
+    max-width: 725px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 36px;
+}
+
+footer {
+    background: #35312e;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.footer--wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.footer-contact {
+    flex: 1;
+}
+
+.footer-about {
+    flex: 1;
+}
+
+.about--title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.about--info {
+    line-height: 26px;
+}
+
+.contact--item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact--item span{
+    background: #403d3a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+footer .email a{
+    color: #c5a562;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    background: #403d3a;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
