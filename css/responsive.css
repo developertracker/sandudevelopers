@@ -284,6 +284,8 @@
     .m-project--details--info {
         font-size: 12px;
         line-height: 20px;
+        height: 300px;
+        overflow: auto;
     }
 
     .m-project--title {

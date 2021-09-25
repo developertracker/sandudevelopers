@@ -4,7 +4,7 @@ $(document).ready(function() {
         $(this).parent('.o-grid--3').addClass('active');
         $(this).closest('.o-grid').addClass('open');
         $('.o-grid--right').hide();
-        $(this).next('.o-grid--right').slide();
+        $(this).next('.o-grid--right').show();
     });
 
     $('.menu-icon').click(function () {
