@@ -7,6 +7,12 @@ $(document).ready(function() {
         $(this).next('.o-grid--right').show();
     });
 
+    $('.o-grid').mouseleave(function () {
+        $('.o-grid').removeClass('open');
+        $('.o-grid--3').removeClass('active');
+        $('.o-grid--right').hide();
+    });
+
     $('.menu-icon').click(function () {
         $('nav').slideToggle();
     })
