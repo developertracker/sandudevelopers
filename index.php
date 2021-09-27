@@ -26,10 +26,10 @@
                 <ul class="m-list">
                     <li class="m-list--item">About</li>
                     <li class="m-list--item">Projects</li>
-                    <li class="m-list--item">Building Neighbourhoods</li>
                     <li class="m-list--item">Building Communities</li>
                     <li class="m-list--item">Society Portal</li>
                     <li class="m-list--item">Partner Contact</li>
+                    <li class="m-list--item">Contact Us</li>
                 </ul>
             </nav>
 
@@ -120,21 +120,22 @@
       <!-- END PROJECTS -->
       <div style="clear: both;"></div>
 
-      <!-- Building Neighborhoods -->
+      <!-- Building Communities -->
       <section id="section-3">
         <div class="intro intro--with-image">
           <div class="intro--left">
-            <div class="intro--title"><h1>Building Neighborhoods</h1></div>
+            <div class="intro--title"><h1>Building Communities</h1></div>
             <div class="intro--description">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              <a href="#" class="a-link">Read more <span>&rarr;</span></a>
             </div>
           </div>
           <div class="intro--right intro--image">
-            <img src="images/image-1.jpg" alt="Building Neighorhoods" />
+            <img src="images/image-1.jpg" alt="Building Communities" />
           </div>
         </div>
       </section>
-      <!-- END Building Neighborhoods -->
+      <!-- END Building Communities -->
 
       <!-- Building Communities -->
       <section class="o-communities" id="section-4">
@@ -187,8 +188,10 @@
         <div class="m-partner">
           <div class="m-partner--title">Partner Connect</div>
           <div class="m-partner--form">
-            <form>
-              <input type="text" placeholder="Login" >
+            <form name="partner-form">
+              <input type="text" placeholder="User Id" required>
+              <input type="password" placeholder="Password" required>
+              <button type="submit">Login</button>
             </form>
           </div>
         </div>
@@ -219,6 +222,35 @@
         </footer>
       </section>
       <!-- END Footer -->
+
+      <!-- Lead Form-->
+      <section>
+        <div class="media__form">
+            <div class="close-btn"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                </svg> 
+            </div>
+            <form method="POST" action="thank-you.php" name="lead__form">
+                <fieldset>
+                    <label>Name</label>
+                    <input type="name" name="name" id="name"  required> 
+                </fieldset>
+                <fieldset>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email"  required> 
+                </fieldset>
+                <fieldset>
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="phone" maxlength="10" required onkeyup="this.value=this.value.replace(/[^\d]/,'')"> 
+                </fieldset>
+                <fieldset class="form-actions">
+                    <button type="submit" name="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!--END Lead Form-->
     </main>
     <!-- JavaScript; -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

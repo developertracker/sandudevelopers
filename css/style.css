@@ -149,6 +149,22 @@ figure.banner img {
     line-height: 30px;
 }
 
+.intro--description .a-link {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.intro--description .a-link span{
+    transform: translateX(0px);
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+.intro--description .a-link:hover span{
+    transform: translateX(10px);
+}
+
 .intro--with-image .intro--description {
     padding: 0;
     flex: 0 0 100%;
@@ -384,7 +400,24 @@ figure.banner img {
     width: 100%;
     padding: 5px 10px;
     font-size: 36px;
+    margin-bottom: 10px;
 }
+
+.m-partner--form button {
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    padding: 10px 20px;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.m-partner--form button:hover {
+    background: #603132;
+    color: #ffffff;
+}
+
 
 footer {
     background: #35312e;
@@ -460,3 +493,48 @@ footer .email a{
     margin-right: 8px;
 }
 
+.media__form {
+    position: fixed;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    background: rgba(96, 49, 50, 0.8);
+    padding: 20px;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.media__form fieldset {
+    border: 0;
+    margin-bottom: 10px;
+    outline: none;
+}
+.media__form fieldset label {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.media__form fieldset input, .media__form fieldset button  {
+    outline: none;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.media__form fieldset button {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.media__form fieldset button:hover {
+    background: #ffffff;
+    color: rgba(96, 49, 50, 1);
+}

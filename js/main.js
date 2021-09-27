@@ -18,7 +18,7 @@ $(document).ready(function() {
     })
 
     $('nav ul li').each(function(index) {
-        const count = index;
+        const count = index + 1;
         $(this).click(function() {
             console.log(count);
             if($(window).width() <= 960) {
