@@ -17,16 +17,41 @@ $(document).ready(function() {
         $('nav').slideToggle();
     })
 
+
     $('nav ul li').each(function(index) {
         const count = index + 1;
         $(this).click(function() {
-            console.log(count);
             if($(window).width() <= 960) {
                 $('nav').slideUp('fast');
             }
             var element = document.querySelector('#section-'+ count)
             element.scrollIntoView({behavior: "smooth"});
+            $('nav > ul > li').removeClass('active');
+            $(this).addClass('active');
         })
+    });
+
+    $('.close-btn').click(function(){
+        $('.media__form').hide();
+    })
+
+    $('.o-slider').bxSlider({
+        pager: false,
+    });
+
+    $(window).scroll(function() {
+        var position = $(this).scrollTop();
+        var headerHeight = $('header').outerHeight() +10;
+
+        $('section').each(function() {
+            var target = $(this).offset().top - headerHeight;
+            var id = $(this).attr('id');
+
+            if (position >= target) {
+                $('nav > ul > li').removeClass('active');
+               $('nav > ul > li[data-url=' + id + ']').addClass('active');
+            }
+        });
     })
 
 })

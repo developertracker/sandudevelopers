@@ -52,10 +52,12 @@ header {
     width: 100%;
     z-index: 100;
     background: #ffffff;
+    box-sizing: border-box;
 }
 
 figure.logo {
     padding: 0 45px;
+    flex: 1;
 }
 
 .menu-icon {
@@ -65,21 +67,25 @@ figure.logo {
 nav {
     background: #f6f2ec;
     color: #603132;
+    flex: 5;
 }
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
     list-style-type: none;
-    padding: 0 40px;
+    padding: 80px 40px;
 }
 
 nav ul li {
     font-size: 30px;
-    padding: 80px 20px;
+    padding: 0px 30px;
+    transition: all 0.2s ease-in;
 }
 
-nav ul li:hover {
-    background: #ddc397;
+nav ul li:hover, nav ul li.active {
+    background: #6f4444;
+    color: #ffffff;
 }
 
 .banner-wrapper {
@@ -103,6 +109,7 @@ figure.banner img {
     background: #fff2e8;
     padding: 100px;
     display: flex;
+    align-items: center;
 }
 
 .intro--with-image {
@@ -184,8 +191,24 @@ figure.banner img {
     display: block;
 }
 
+.align-center {
+    align-items: center;
+}
+
 .o-grid {
     display: flex;
+}
+
+.o-grid--2 {
+    flex: 1;
+}
+
+.o-grid--2--first {
+    flex: 1;
+}
+
+.o-grid--2--last {
+    flex: 2;
 }
 
 .o-grid--3 {
@@ -250,7 +273,11 @@ figure.banner img {
 }
 
 
-
+#section-2 {
+    background:url(../images/projects-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
 
 .m-project--title {
     font-family: 'Open Sans', sans-serif;
@@ -266,8 +293,20 @@ figure.banner img {
     background: #ddc397;
 }
 
+.m-project--image {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
 .m-project--image img {
-    width: 100%;
+    margin: -80px auto 0;
+    text-align: center;
+    display: block;
+    object-fit: contain;
 }
 
 .m-project--details {
@@ -279,8 +318,10 @@ figure.banner img {
 }
 
 .m-project--details--title {
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 20px;
+    color: #ffffff;
+
 }
 
 .m-project--details--info {
@@ -289,6 +330,9 @@ figure.banner img {
     font-family: 'Open Sans', sans-serif;
     scrollbar-color: rgba(0, 0, 0, 0.5) #ffffff;
     scrollbar-width: thin;
+    color: #ffffff;
+    padding-right: 6%;
+
 }
 
 .figure-details--info::-webkit-scrollbar {
@@ -304,6 +348,23 @@ figure.banner img {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.o-communities .intro--title, .o-testimonials .intro--title {
+    text-align: center;
+    background: #f6f2ec;
+    padding: 20px 0;
+    line-height: normal;
+}
+
+.o-communities .intro--title h1, .o-testimonials .intro--title h1 {
+    padding-bottom: 0;
+}
+.o-communities .intro--title h1:after, .o-testimonials .intro--title h1:after {
+    display: none;
+}
+
+.o-testimonials .intro--title {
+    background: transparent;
+}
 
 .o-communities .figure--wrapper {
     position: relative;
@@ -381,6 +442,57 @@ figure.banner img {
 .a-link {
     color: #ffffff;
     font-size: 20px;
+}
+
+.o-testimonials__wrapper {
+    display: flex;
+    padding: 50px;
+}
+
+.o-testimonials__item {
+    color: rgba(96, 49, 50, 1);
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-right: 30px;
+    flex: 1;
+    text-align: center;
+    min-height: 450px;
+}
+
+.o-testimonials__item--1 {
+    background-image: url(../images/bg1.png);
+}
+
+.o-testimonials__item--2 {
+    background-image: url(../images/bg2.png);
+    color: #ffffff;
+
+}
+
+.o-testimonials__item--3 {
+    background-image: url(../images/bg3.png);
+    margin-right: 0;
+
+}
+
+.o-testimonials__content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.o-testimonials__title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.o-testimonials__text {
+    font-size: 16px;
 }
 
 .m-partner {
@@ -500,12 +612,13 @@ footer .email a{
     transform: translateY(-50%);
     background: rgba(96, 49, 50, 0.8);
     padding: 20px;
+    z-index: 999;
 }
 
 .close-btn {
     display: flex;
     justify-content: flex-end;
-
+    cursor: pointer;
 }
 
 .media__form fieldset {
@@ -537,4 +650,10 @@ footer .email a{
 .media__form fieldset button:hover {
     background: #ffffff;
     color: rgba(96, 49, 50, 1);
+}
+
+.m-partner--form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

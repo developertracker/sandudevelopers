@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Sandu Developers</title>
   </head>
@@ -24,12 +24,12 @@
             <div class="menu-icon"><i class="fas fa-bars"></i></div>
             <nav>
                 <ul class="m-list">
-                    <li class="m-list--item">About</li>
-                    <li class="m-list--item">Projects</li>
-                    <li class="m-list--item">Building Communities</li>
-                    <li class="m-list--item">Society Portal</li>
-                    <li class="m-list--item">Partner Contact</li>
-                    <li class="m-list--item">Contact Us</li>
+                    <li class="m-list--item" data-url="section-1">About</li>
+                    <li class="m-list--item" data-url="section-2">Projects</li>
+                    <li class="m-list--item" data-url="section-3">Building Communities</li>
+                    <li class="m-list--item" data-url="section-4">Testimonial</li>
+                    <li class="m-list--item" data-url="section-5">Partner Contact</li>
+                    <li class="m-list--item" data-url="section-6">Contact Us</li>
                 </ul>
             </nav>
 
@@ -38,7 +38,7 @@
       <!-- END HEADER -->
       
       <!-- BANNER -->
-      <section id="section-0">
+      <section class="section" id="section-0">
         <div class="banner-wrapper">
           <figure class="banner">
             <figcaption>We turn<br> dream homes<br> to reality.</figcaption>
@@ -61,7 +61,65 @@
 
       <!-- PROJECTS -->
       <section id="section-2">
-      <div class="o-grid">
+        <div class="o-slider">
+          <div class="o-slider__item">
+            <div class="o-grid align-center">
+              <div class="o-grid--2">
+                <div class="m-project--image"><img src="../images/project-1.jpg"></div>
+              </div>
+              <div class="o-grid--2 ">
+                <div class="m-project--details--title">Aarambh</div>
+                <div class="m-project--details--info">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="o-slider__item">
+              <div class="o-grid align-center">
+                <div class="o-grid--2">
+                  <div class="m-project--image"><img src="../images/project-2.jpg"></div>
+                </div>
+                <div class="o-grid--2">
+                  <div class="m-project--details--title">Samruddhi</div>
+                  <div class="m-project--details--info">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="o-slider__item">
+              <div class="o-grid align-center">
+                <div class="o-grid--2">
+                  <div class="m-project--image"><img src="../images/project-3.jpg"></div>
+                </div>
+                <div class="o-grid--2">
+                  <div class="m-project--details--title">Vasudev Bhavan</div>
+                  <div class="m-project--details--info">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="o-slider__item">
+              <div class="o-grid align-center">
+                <div class="o-grid--2">
+                  <div class="m-project--image"><img src="../images/project-4.jpg"></div>
+                </div>
+                <div class="o-grid--2">
+                  <div class="m-project--details--title">The Grand</div>
+                  <div class="m-project--details--info">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- <div class="o-grid">
           <div class="o-grid--3">
             <div class="o-grid--left p1">
               <div class="m-project--title">Aarambh</div>
@@ -114,31 +172,15 @@
             </div>
             </div>
           </div>
-        </div>
+        </div> -->
         
       </section>
       <!-- END PROJECTS -->
       <div style="clear: both;"></div>
 
       <!-- Building Communities -->
-      <section id="section-3">
-        <div class="intro intro--with-image">
-          <div class="intro--left">
-            <div class="intro--title"><h1>Building Communities</h1></div>
-            <div class="intro--description">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-              <a href="#" class="a-link">Read more <span>&rarr;</span></a>
-            </div>
-          </div>
-          <div class="intro--right intro--image">
-            <img src="images/image-1.jpg" alt="Building Communities" />
-          </div>
-        </div>
-      </section>
-      <!-- END Building Communities -->
-
-      <!-- Building Communities -->
-      <section class="o-communities" id="section-4">
+      <section class="o-communities" id="section-3">
+        <div class="intro--title"><h1>Building Communities</h1></div>
         <div class="o-grid">
           <div class="o-grid--4">
               <div class="figure--wrapper">
@@ -182,6 +224,38 @@
         </div>
       </section>
       <!-- END Building Communities -->
+
+      <!-- Testimonials -->
+            <section class="o-testimonials" id="section-4">
+              <div class="intro--title"><h1>Testimonial</h1></div>
+              <div class="o-testimonials__wrapper">
+                <div class="o-testimonials__item o-testimonials__item--1">
+                  <div class="o-testimonials__content">
+                    <div class="o-testimonials__title">Lorem Ipsum</div>
+                    <div class="o-testimonials__text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </div>
+                  </div>
+                </div>
+                <div class="o-testimonials__item o-testimonials__item--2">
+                  <div class="o-testimonials__content">
+                    <div class="o-testimonials__title">Lorem Ipsum</div>
+                    <div class="o-testimonials__text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </div>
+                  </div>
+                </div>
+                <div class="o-testimonials__item o-testimonials__item--3">
+                  <div class="o-testimonials__content">
+                    <div class="o-testimonials__title">Lorem Ipsum</div>
+                    <div class="o-testimonials__text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      <!-- END Testimonials -->
 
       <!-- Partner Connect -->
       <section id="section-5">
@@ -255,6 +329,7 @@
     <!-- JavaScript; -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <script src="js/main.js"></script>
 
   </body>
